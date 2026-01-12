@@ -1,431 +1,482 @@
 <!DOCTYPE html>
-<html lang="my">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
+    <title>Privacy Policy - KING VPN PRO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>นโยบายความเป็นส่วนตัว KING VPN PRO</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=IBM+Plex+Sans+Thai:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary-color: #2A4B8C;
-            --secondary-color: #4A76C6;
-            --accent-color: #1DD1A1;
-            --light-color: #F5F9FF;
-            --dark-color: #1A2B4A;
-            --text-color: #333333;
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #0ea5e9;
+            --accent: #3b82f6;
+            --light: #f8fafc;
+            --dark: #1e293b;
+            --gray: #64748b;
+            --light-gray: #e2e8f0;
+            --border-radius: 12px;
+            --box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
         }
-        
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Kanit', sans-serif;
-            background-color: #f8f9fa;
-            color: var(--text-color);
+            font-family: 'IBM Plex Sans Thai', 'Kanit', sans-serif;
             line-height: 1.7;
+            color: var(--dark);
+            background-color: #f1f5f9;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(37, 99, 235, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(14, 165, 233, 0.05) 0%, transparent 20%);
+            padding: 20px;
+            min-height: 100vh;
         }
-        
-        /* นำทางแบบพิเศษ */
-        .custom-navbar {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            padding: 15px 0;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .custom-navbar::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNDUiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIgc3Ryb2tlLXdpZHRoPSIyIi8+PGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iMzUiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIgc3Ryb2tlLXdpZHRoPSIyIi8+PGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iMjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+');
-            opacity: 0.1;
-        }
-        
-        .navbar-brand {
-            display: flex;
-            align-items: center;
-            color: white;
-            font-weight: 600;
-            font-size: 1.5rem;
-        }
-        
-        .navbar-brand img {
-            height: 40px;
-            margin-right: 10px;
-        }
-        
-        .nav-link {
-            color: rgba(255, 255, 255, 0.85) !important;
-            font-weight: 400;
-            padding: 8px 15px !important;
-            margin: 0 5px;
-            border-radius: 20px;
-            transition: all 0.3s ease;
-        }
-        
-        .nav-link:hover {
-            color: white !important;
-            background-color: rgba(255, 255, 255, 0.1);
-            transform: translateY(-2px);
-        }
-        
-        .nav-link.active {
-            color: white !important;
-            background-color: rgba(255, 255, 255, 0.2);
-            font-weight: 500;
-        }
-        
-        /* ส่วนเนื้อหา */
-        .content-section {
-            background-color: white;
-            border-radius: 15px;
-            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
-            margin-bottom: 30px;
-            padding: 30px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border-left: 4px solid var(--accent-color);
-        }
-        
-        .content-section:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .content-section h3 {
-            color: var(--primary-color);
-            font-weight: 600;
-            margin-bottom: 20px;
-            position: relative;
-            padding-bottom: 10px;
-        }
-        
-        .content-section h3::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 3px;
-            background-color: var(--accent-color);
-            border-radius: 2px;
-        }
-        
-        .content-section p {
-            color: var(--text-color);
-            margin-bottom: 15px;
-        }
-        
-        .content-section ul {
-            padding-left: 20px;
-        }
-        
-        .content-section li {
-            margin-bottom: 10px;
-        }
-        
-        .content-section a {
-            color: var(--secondary-color);
-            font-weight: 500;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .content-section a:hover {
-            color: var(--primary-color);
-            text-decoration: underline;
-        }
-        
-        /* ส่วนหัว */
-        .header-section {
-            background: linear-gradient(135deg, var(--light-color) 0%, #ffffff 100%);
-            border-radius: 15px;
-            padding: 40px;
-            margin: 30px 0;
-            text-align: center;
-            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .header-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 200px;
-            height: 200px;
-            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj48cGF0aCBkPSJNMTUwIDUwQzE2NS41IDY1LjUgMTc1IDg1IDE3NSAxMDVDMTc1IDEyNSAxNjUuNSAxNDQuNSAxNTAgMTYwQzEzNC41IDE3NS41IDExNSAxODUgOTUgMTg1Qzc1IDE4NSA1NS41IDE3NS41IDQwIDE2MEMyNC41IDE0NC41IDE1IDEyNSAxNSAxMDVDMTUgODUgMjQuNSA2NS41IDQwIDUwQzU1LjUgMzQuNSA3NSAyNSA5NSAyNUMxMTUgMjUgMTM0LjUgMzQuNSAxNTAgNTBaIiBmaWxsPSJub25lIiBzdHJva2U9IiM0QTc2QzYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW9wYWNpdHk9IjAuMSIvPjwvc3ZnPg==');
-            opacity: 0.5;
-        }
-        
-        .header-section h1 {
-            color: var(--primary-color);
-            font-weight: 600;
-            margin-bottom: 20px;
-        }
-        
-        .header-section p {
-            color: var(--text-color);
-            font-size: 1.1rem;
-            max-width: 800px;
+
+        .container {
+            max-width: 1000px;
             margin: 0 auto;
         }
-        
-        /* ส่วนท้าย */
-        .footer-section {
-            background: linear-gradient(135deg, var(--dark-color) 0%, var(--primary-color) 100%);
-            color: white;
-            padding: 40px 0;
-            margin-top: 50px;
+
+        header {
             text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            position: relative;
         }
-        
-        .footer-logo {
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
             margin-bottom: 20px;
         }
-        
-        .footer-logo img {
+
+        .logo-icon {
+            width: 60px;
             height: 60px;
-            /* ลบ filter ที่ทำให้เป็นสีขาวออก */
-        }
-        
-        .footer-section p {
-            margin-bottom: 5px;
-            opacity: 0.8;
-        }
-        
-        .footer-section .copyright {
-            margin-top: 20px;
-            opacity: 0.6;
-            font-size: 0.9rem;
-        }
-        
-        /* ปุ่มกลับขึ้นด้านบน */
-        .back-to-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background-color: var(--accent-color);
-            color: white;
-            width: 50px;
-            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-            z-index: 1000;
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
         }
-        
-        .back-to-top.show {
-            opacity: 1;
-            visibility: visible;
+
+        .logo-icon i {
+            font-size: 28px;
+            color: white;
         }
-        
-        .back-to-top:hover {
-            background-color: var(--primary-color);
-            transform: translateY(-5px);
+
+        .logo-text {
+            font-size: 28px;
+            font-weight: 700;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: 1px;
         }
-        
-        /* Responsive */
+
+        h1 {
+            font-family: 'Kanit', sans-serif;
+            font-weight: 600;
+            color: var(--dark);
+            font-size: 32px;
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: var(--gray);
+            max-width: 600px;
+            margin: 20px auto 0;
+        }
+
+        .content-box {
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 40px;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--light-gray);
+        }
+
+        .content-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary), var(--secondary));
+        }
+
+        .intro {
+            font-size: 18px;
+            color: var(--dark);
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: rgba(37, 99, 235, 0.03);
+            border-radius: 10px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .intro strong {
+            color: var(--primary);
+        }
+
+        h2 {
+            font-family: 'Kanit', sans-serif;
+            font-weight: 600;
+            color: var(--primary-dark);
+            font-size: 24px;
+            margin: 35px 0 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2 i {
+            color: var(--secondary);
+            font-size: 22px;
+            width: 30px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        ul {
+            margin: 15px 0 25px 25px;
+            padding-left: 5px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 10px;
+        }
+
+        li::before {
+            content: '•';
+            color: var(--primary);
+            font-weight: bold;
+            position: absolute;
+            left: -15px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(14, 165, 233, 0.08));
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid var(--primary);
+        }
+
+        .no-log-policy {
+            background-color: rgba(16, 185, 129, 0.08);
+            border-left-color: #10b981;
+        }
+
+        .no-log-policy h3 {
+            color: #10b981;
+            font-family: 'Kanit', sans-serif;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .ad-info {
+            background-color: rgba(245, 158, 11, 0.08);
+            border-left-color: #f59e0b;
+        }
+
+        .ad-info h3 {
+            color: #f59e0b;
+            font-family: 'Kanit', sans-serif;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            padding: 15px;
+            background-color: rgba(37, 99, 235, 0.05);
+            border-radius: 10px;
+            max-width: fit-content;
+        }
+
+        .contact-info i {
+            color: var(--primary);
+            font-size: 20px;
+        }
+
+        .effective-date {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 50px;
+            font-weight: 500;
+            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: var(--gray);
+            font-size: 14px;
+            border-top: 1px solid var(--light-gray);
+            margin-top: 40px;
+        }
+
+        .footer-logo {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 16px;
+        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
-            .content-section {
-                padding: 20px;
+            .content-box {
+                padding: 25px;
             }
             
-            .header-section {
-                padding: 30px 20px;
+            h1 {
+                font-size: 28px;
             }
             
-            .custom-navbar .navbar-nav {
-                text-align: center;
-                margin-top: 15px;
+            h2 {
+                font-size: 22px;
             }
             
-            /* แก้ไขโลโก้ให้ห่างจากขอบมือถือ */
-            .navbar-brand {
-                margin-left: 15px; /* เพิ่มระยะห่างจากขอบซ้าย */
+            .logo-text {
+                font-size: 24px;
             }
         }
-        
-        /* สำหรับหน้าจอที่เล็กมาก (เช่น iPhone SE) */
-        @media (max-width: 375px) {
-            .navbar-brand {
-                margin-left: 10px; /* ระยะห่างที่น้อยลงสำหรับหน้าจอเล็กมาก */
+
+        @media (max-width: 480px) {
+            .content-box {
+                padding: 20px 15px;
             }
             
-            .navbar-brand img {
-                height: 35px; /* ลดขนาดโลโก้เล็กน้อย */
+            h1 {
+                font-size: 24px;
             }
             
-            .navbar-brand {
-                font-size: 1.3rem; /* ลดขนาดฟอนต์เล็กน้อย */
+            .logo-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: flex-start;
             }
         }
     </style>
 </head>
 <body>
-    <!-- บาร์นำทางแบบพิเศษ -->
-    <nav class="navbar navbar-expand-lg custom-navbar">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <!-- เปลี่ยนโลโก้เป็นสีปกติ -->
-                <img src="https://raw.githubusercontent.com/vpnnetdee/king-vpn-pro/refs/heads/main/icon_icon.png" alt="KING VPN PRO Logo">
-                KING VPN PRO
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                    <i class="fas fa-bars" style="color: white;"></i>
-                </span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">หน้าแรก</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">นโยบายความเป็นส่วนตัว</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">บริการ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ดาวน์โหลด</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ติดต่อเรา</a>
-                    </li>
-                </ul>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="logo-text">KING VPN PRO</div>
             </div>
-        </div>
-    </nav>
-
-    <div class="container my-5">
-        <!-- ส่วนหัว -->
-        <div class="header-section">
             <h1>นโยบายความเป็นส่วนตัว</h1>
-            <p>เราให้ความสำคัญอย่างยิ่งต่อผู้ใช้งานแอป KING VPN PRO ของเรา เราตระหนักถึงความเป็นส่วนตัวของข้อมูลส่วนบุคคลและจะเก็บข้อมูลที่ได้รับจากผู้ใช้งานให้ปลอดภัย เราต้องการแจ้งให้คุณทราบเกี่ยวกับนโยบายของแอปเกี่ยวกับการปกป้องข้อมูลส่วนบุคคลของผู้ใช้หรือผู้มาใช้บริการแอปดังต่อไปนี้</p>
-        </div>
+            <p class="tagline">เราให้ความสำคัญกับความเป็นส่วนตัวของคุณเป็นลำดับแรก</p>
+        </header>
 
-        <!-- ส่วนเนื้อหา -->
-        <div class="content-section">
-            <h3>การจัดเก็บข้อมูล</h3>
-            <p>เราจะไม่นำข้อมูลส่วนบุคคลของผู้ใช้ไปใช้เพื่อจุดประสงค์อื่นใดนอกเหนือจากการให้บริการภายใต้ชื่อ KING VPN PRO เราได้ออกแบบและจัดเก็บข้อมูลตามมาตรฐานความปลอดภัยให้มากที่สุด เพื่อปกป้องข้อมูลของผู้ใช้งาน</p>
-        </div>
-
-        <div class="content-section">
-            <h3>วัตถุประสงค์การใช้ข้อมูล</h3>
-            <p>เราได้นำข้อมูลมาเพื่อใช้พัฒนาระบบแอป KING VPN PRO ให้มีประสิทธิภาพและให้บริการแก่ผู้ใช้งานได้อย่างครบวงจรเท่านั้น</p>
-        </div>
-
-        <div class="content-section">
-            <h3>การรวบรวมและการใช้ข้อมูล</h3>
-            <p>เพื่อประสบการณ์ที่ดีขึ้นขณะใช้แอป KING VPN PRO ของเรา เราอาจขอให้คุณระบุข้อมูลส่วนบุคคลบางอย่างแก่เรา ข้อมูลที่เราขอจะถูกเก็บไว้ในอุปกรณ์ของคุณและจะไม่ถูกเก็บรวบรวมโดยเราในทางใดทางหนึ่งแอปนี้ใช้บริการของบุคคลที่สามซึ่งอาจรวบรวมข้อมูลที่ใช้เพื่อระบุตัวคุณลิงก์ไปยังนโยบายความเป็นส่วนตัวของผู้ให้บริการบุคคลที่สามที่ใช้โดยแอป</p>
-            <ul>
-                <li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li> 
-                <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener noreferrer">AdMob</a></li> 
-            </ul>
-        </div>
-
-        <div class="content-section">
-            <h3>ข้อมูลบันทึก</h3>
-            <p>ฉันต้องการแจ้งให้คุณทราบว่าเมื่อใดก็ตามที่คุณใช้แอป KING VPN PRO ของเรา ในกรณีที่เกิดข้อผิดพลาดในแอป เราจะรวบรวมข้อมูล (ผ่านผลิตภัณฑ์ของบุคคลที่สาม) บนโทรศัพท์ของคุณที่เรียกว่า Log Data ข้อมูลบันทึกนี้อาจรวมถึงข้อมูล เช่น ที่อยู่ Internet Protocol ("IP") ของอุปกรณ์ ชื่ออุปกรณ์ เวอร์ชันระบบปฏิบัติการ การกำหนดค่าของแอปเมื่อใช้บริการของเรา เวลาและวันที่คุณใช้บริการ และสถิติอื่นๆ</p>
-        </div>
-
-        <div class="content-section">
-            <h3>คุกกี้</h3>
-            <p>คุกกี้คือไฟล์ที่มีข้อมูลจำนวนเล็กน้อยซึ่งมักใช้เป็นตัวระบุเฉพาะที่ไม่ระบุตัวต้น คุกกี้จะถูกส่งไปยังเบราว์เซอร์ของคุณจากเว็บไซต์ที่คุณเยี่ยมชมและจัดเก็บไว้ในหน่วยความจำภายในของอุปกรณ์ของคุณ</p>
-            <p>บริการนี้ไม่ได้ใช้ "คุกกี้" เหล่านี้โดยชัดเจน อย่างไรก็ตาม แอปอาจใช้โค้ดและไลบรารีของบุคคลที่สามซึ่งใช้ "คุกกี้" เพื่อรวบรวมข้อมูลและปรับปรุงบริการของตน คุณมีตัวเลือกที่จะยอมรับหรือปฏิเสธคุกกี้เหล่านี้ และทราบเมื่อคุกกี้ถูกส่งไปยังอุปกรณ์ของคุณ หากคุณเลือกที่จะปฏิเสธคุกกี้ของเรา คุณอาจไม่สามารถใช้บริการนี้บางส่วนได้</p>
-        </div>
-
-        <div class="content-section">
-            <h3>ความปลอดภัย</h3>
-            <p>เราเห็นคุณค่าในความไว้วางใจและขอขอบคุณผู้ใช้งานแอป KING VPN PRO ของเรา ในการให้ข้อมูลส่วนบุคคลแก่เรา ดังนั้นเราจึงพยายามใช้มาตรการที่เป็นที่ยอมรับในเชิงพาณิชย์ในการปกป้องข้อมูล แต่โปรดจำไว้ว่าไม่มีวิธีการส่งข้อมูลผ่านอินเทอร์เน็ตหรือวิธีการจัดเก็บข้อมูลทางอิเล็กทรอนิกส์ใดที่ปลอดภัยและเชื่อถือได้ 100% และเราไม่สามารถรับประกันความปลอดภัยได้อย่างเต็ม100%</p>
-        </div>
-
-        <div class="content-section">
-            <h3>ลิงค์ไปยังเว็บไซต์อื่น ๆ</h3>
-            <p>แอป KING VPN PRO ของเราอาจมีลิงก์ไปยังเว็บไซต์อื่น หากคุณคลิกลิงก์ของบุคคลที่สาม คุณจะถูกนำไปยังเว็บไซต์นั้น โปรดทราบว่าเราไม่ได้เป็นผู้ดำเนินการเว็บไซต์ภายนอกเหล่านี้ ดังนั้น เราขอแนะนำอย่างยิ่งให้คุณตรวจสอบนโยบายความเป็นส่วนตัวของเว็บไซต์เหล่านี้ เราไม่สามารถควบคุมและไม่รับผิดชอบต่อเนื้อหา นโยบายความเป็นส่วนตัว หรือแนวทางปฏิบัติของเว็บไซต์หรือบริการของบุคคลที่สามใดๆ</p>
-        </div>
-
-        <div class="content-section">
-            <h3>ความเป็นส่วนตัวของเด็ก</h3>
-            <p>แอป SHAN VPM ของเราไม่มุ่งเป้าไปที่ผู้ที่มีอายุต่ำกว่า 13 ปี เราไม่รวบรวมข้อมูลส่วนตัวที่สามารถระบุตัวตนได้จากเด็กอายุต่ำกว่า 13 ปีโดยเจตนา ในกรณีที่ฉันพบว่าเด็กอายุต่ำกว่า 13 ปีได้ให้ข้อมูลส่วนบุคคลแก่เรา เราจะลบข้อมูลดังกล่าวออกจากเซิร์ฟเวอร์ของเราทันที หากคุณเป็นผู้ปกครองหรือผู้ดูแล และคุณทราบว่าบุตรหลานของคุณได้ให้ข้อมูลส่วนบุคคลแก่เรา โปรดติดต่อเราเพื่อให้เราสามารถดำเนินการที่จำเป็นได้</p>
-        </div>
-
-        <div class="content-section">
-            <h3>การเปลี่ยนแปลงนโยบายความเป็นส่วนตัวนี้</h3>
-            <p>ทางผู้พัฒนาแอป KING VPN PRO อาจอัปเดตนโยบายความเป็นส่วนตัวของเราเป็นระยะๆ ดังนั้น เราขอแนะนำให้คุณตรวจสอบหน้านี้เป็นระยะๆ เพื่อดูว่ามีการเปลี่ยนแปลงใดๆ หรือไม่ เราจะแจ้งให้คุณทราบถึงการเปลี่ยนแปลงใดๆ โดยการโพสต์นโยบายความเป็นส่วนตัวฉบับใหม่บนหน้านี้</p>
-        </div>
-
-        <div class="content-section">
-            <h3>ติดต่อเรา</h3>
-            <p>หากคุณมีคำถามหรือข้อเสนอแนะเกี่ยวกับนโยบายความเป็นส่วนตัวของเรา โปรดอย่าลังเลที่จะติดต่อเรา</p>
-            <p><i class="fas fa-envelope mr-2"></i>vpnnetdee@gmail.com</p>
-        </div>
-    </div>
-
-    <!-- ส่วนท้าย -->
-    <footer class="footer-section">
-        <div class="container">
-            <div class="footer-logo">
-                <!-- เปลี่ยนโลโก้เป็นสีปกติ -->
-                <img src="https://raw.githubusercontent.com/vpnnetdee/king-vpn-pro/refs/heads/main/icon_icon.png" alt="KING VPN PRO Logo">
+        <div class="content-box">
+            <div class="intro">
+                <strong>KING VPN PRO</strong> ให้ความสำคัญกับความเป็นส่วนตัวของผู้ใช้งานเป็นอย่างยิ่ง
+                นโยบายความเป็นส่วนตัวฉบับนี้อธิบายถึงวิธีการเก็บรวบรวม ใช้งาน และปกป้องข้อมูลของผู้ใช้งาน
             </div>
-            <p>นโยบายความเป็นส่วนตัว</p>
-            <p class="copyright">&copy; -2026 KING VPN PRO. สงวนลิขสิทธิ์</p>
-        </div>
-    </footer>
 
-    <!-- ปุ่มกลับขึ้นด้านบน -->
-    <div class="back-to-top" id="backToTop">
-        <i class="fas fa-chevron-up"></i>
+            <h2><i class="fas fa-database"></i>1. การเก็บรวบรวมข้อมูล</h2>
+            <p>
+                KING VPN PRO ไม่เก็บรวบรวมข้อมูลส่วนบุคคลที่สามารถระบุตัวตนของผู้ใช้งาน เช่น
+                ชื่อ-นามสกุล ที่อยู่ อีเมล หรือหมายเลขโทรศัพท์
+            </p>
+            <p>
+                แอปอาจเก็บข้อมูลที่ไม่สามารถระบุตัวตนได้ เช่น:
+            </p>
+            <ul>
+                <li>ข้อมูลอุปกรณ์ (เช่น รุ่นอุปกรณ์, เวอร์ชันระบบปฏิบัติการ)</li>
+                <li>ข้อมูลการใช้งานแอปโดยรวม เพื่อการปรับปรุงประสิทธิภาพ</li>
+            </ul>
+
+            <h2><i class="fas fa-user-shield"></i>2. การใช้งาน VPN (No-Log Policy)</h2>
+            <div class="highlight-box no-log-policy">
+                <h3><i class="fas fa-lock"></i>นโยบายไม่บันทึกข้อมูลการใช้งาน</h3>
+                <p>KING VPN PRO มีนโยบายไม่บันทึกข้อมูลการใช้งาน (No-Log Policy) อย่างเคร่งครัด:</p>
+            </div>
+            <ul>
+                <li>ไม่บันทึกประวัติการใช้งานอินเทอร์เน็ต</li>
+                <li>ไม่บันทึกที่อยู่ IP ของผู้ใช้งาน</li>
+                <li>ไม่ติดตามกิจกรรมออนไลน์ของผู้ใช้งาน</li>
+                <li>ไม่เก็บข้อมูลการเชื่อมต่อหรือเซสชัน</li>
+            </ul>
+
+            <h2><i class="fas fa-ad"></i>3. โฆษณา (Advertising)</h2>
+            <div class="highlight-box ad-info">
+                <h3><i class="fas fa-info-circle"></i>ข้อมูลเกี่ยวกับโฆษณา</h3>
+                <p>KING VPN PRO ใช้บริการโฆษณาของบุคคลที่สาม เช่น Google AdMob
+                ผู้ให้บริการโฆษณาอาจใช้คุกกี้หรือเทคโนโลยีที่คล้ายกัน
+                เพื่อแสดงโฆษณาที่เหมาะสมกับผู้ใช้งาน</p>
+            </div>
+            <p>
+                ผู้ใช้งานสามารถศึกษานโยบายความเป็นส่วนตัวของ Google ได้ที่:
+            </p>
+            <p>
+                <a href="https://policies.google.com/privacy" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> https://policies.google.com/privacy
+                </a>
+            </p>
+
+            <h2><i class="fas fa-cogs"></i>4. การใช้ข้อมูล</h2>
+            <p>
+                ข้อมูลที่ถูกเก็บ (ถ้ามี) จะถูกใช้เพื่อ:
+            </p>
+            <ul>
+                <li>ปรับปรุงคุณภาพและประสิทธิภาพของแอป</li>
+                <li>แก้ไขข้อผิดพลาดและพัฒนาแอป</li>
+                <li>วิเคราะห์การใช้แอปในภาพรวมเพื่อพัฒนาประสบการณ์ผู้ใช้</li>
+            </ul>
+            <p>
+                KING VPN PRO จะไม่ขาย แลกเปลี่ยน หรือเปิดเผยข้อมูลของผู้ใช้งานให้กับบุคคลที่สาม
+                ยกเว้นตามที่กฎหมายกำหนด
+            </p>
+
+            <h2><i class="fas fa-shield-alt"></i>5. ความปลอดภัยของข้อมูล</h2>
+            <p>
+                เราใช้มาตรการด้านความปลอดภัยที่เหมาะสมเพื่อป้องกันการเข้าถึง
+                การเปลี่ยนแปลง หรือการเปิดเผยข้อมูลโดยไม่ได้รับอนุญาต
+            </p>
+            <ul>
+                <li>การเข้ารหัสข้อมูลที่ส่งระหว่างอุปกรณ์และเซิร์ฟเวอร์</li>
+                <li>ระบบรักษาความปลอดภัยหลายชั้นสำหรับเซิร์ฟเวอร์</li>
+                <li>การตรวจสอบและอัปเดตระบบความปลอดภัยอย่างสม่ำเสมอ</li>
+            </ul>
+
+            <h2><i class="fas fa-sync-alt"></i>6. การเปลี่ยนแปลงนโยบาย</h2>
+            <p>
+                KING VPN PRO อาจมีการปรับปรุงนโยบายความเป็นส่วนตัวนี้เป็นครั้งคราว
+                การเปลี่ยนแปลงจะถูกประกาศบนหน้านี้และภายในแอปพลิเคชัน
+            </p>
+            <p>
+                เราขอแนะนำให้ผู้ใช้งานตรวจสอบนโยบายความเป็นส่วนตัวเป็นระยะเพื่อรับทราบการอัปเดตล่าสุด
+            </p>
+
+            <h2><i class="fas fa-envelope"></i>7. การติดต่อ</h2>
+            <p>
+                หากมีคำถามหรือข้อสงสัยเกี่ยวกับนโยบายความเป็นส่วนตัว
+                สามารถติดต่อได้ที่:
+            </p>
+            <div class="contact-info">
+                <i class="fas fa-envelope"></i>
+                <strong>อีเมล:</strong> vpnnetdee@gmail.com
+            </div>
+
+            <div class="effective-date">
+                <strong>มีผลบังคับใช้ตั้งแต่:</strong> 12 มกราคม 2026
+            </div>
+        </div>
+
+        <footer>
+            <p class="footer-logo">KING VPN PRO</p>
+            <p style="margin-top: 10px;">© 2026 KING VPN PRO. All rights reserved.</p>
+        </footer>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
     <script>
-        // ฟังก์ชันสำหรับปุ่มกลับขึ้นด้านบน
-        window.addEventListener('scroll', function() {
-            const backToTopButton = document.getElementById('backToTop');
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.add('show');
-            } else {
-                backToTopButton.classList.remove('show');
-            }
-        });
-        
-        document.getElementById('backToTop').addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-        
-        // เพิ่มเอฟเฟกต์เมื่อโหลดหน้าเว็บ
+        // เพิ่ม effect เล็กน้อยเมื่อโหลดหน้า
         document.addEventListener('DOMContentLoaded', function() {
-            const contentSections = document.querySelectorAll('.content-section');
-            contentSections.forEach((section, index) => {
-                section.style.opacity = '0';
-                section.style.transform = 'translateY(20px)';
+            // เพิ่ม animation เล็กน้อยให้กับ header
+            const header = document.querySelector('header');
+            header.style.opacity = '0';
+            header.style.transform = 'translateY(-20px)';
+            
+            setTimeout(() => {
+                header.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                header.style.opacity = '1';
+                header.style.transform = 'translateY(0)';
+            }, 100);
+            
+            // เพิ่ม hover effect ให้กับ content box
+            const contentBox = document.querySelector('.content-box');
+            contentBox.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.boxShadow = '0 15px 35px rgba(0, 0, 0, 0.1)';
+            });
+            
+            contentBox.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = 'var(--box-shadow)';
+            });
+            
+            // เพิ่ม animation ให้กับ list items
+            const listItems = document.querySelectorAll('li');
+            listItems.forEach((item, index) => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateX(-10px)';
                 
                 setTimeout(() => {
-                    section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-                    section.style.opacity = '1';
-                    section.style.transform = 'translateY(0)';
-                }, 100 * index);
+                    item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateX(0)';
+                }, 300 + (index * 50));
             });
         });
     </script>
 </body>
-</html>
+        </html>
